@@ -1,1 +1,1 @@
-# Landing_pages_ai.ilal
+# Landing_pages_ai.fiqri
