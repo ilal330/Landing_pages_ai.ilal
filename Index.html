@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="id" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aivora AI - Future Starts Here</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        }
+    </script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #38bdf8, #818cf8, #c084fc);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .glow {
+            box-shadow: 0 0 60px rgba(59,130,246,0.15);
+        }
+
+        .hero-grid {
+            background-image:
+                linear-gradient(rgba(59,130,246,.06) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(59,130,246,.06) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 dark:bg-[#080d1a] text-gray-900 dark:text-white transition-colors duration-300">
+
+<!-- NAVBAR -->
+
+<nav class="sticky top-0 z-50 backdrop-blur-xl bg-white/80 dark:bg-[#080d1a]/85 border-b border-gray-200 dark:border-gray-800">
+
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+
+        <a href="#home" class="text-2xl font-black tracking-tight">
+            <span class="gradient-text">AIVORA</span>
+            <span class="text-blue-500">AI.</span>
+        </a>
+
+        <div class="hidden md:flex items-center gap-8 text-sm font-medium text-gray-500 dark:text-gray-300">
+            <a href="#home" class="hover:text-blue-500">Beranda</a>
+            <a href="#about" class="hover:text-blue-500">Tentang</a>
+            <a href="#features" class="hover:text-blue-500">Fitur</a>
+            <a href="#pricing" class="hover:text-blue-500">Harga</a>
+        </div>
+
+        <div class="flex items-center gap-3">
+
+            <button onclick="toggleDark()"
+                class="w-10 h-10 rounded-xl bg-gray-200 dark:bg-gray-800">
+                <span id="themeIcon">☀️</span>
+            </button>
+
+            <a href="#pricing"
+                class="hidden sm:block bg-blue-600 hover:bg-blue-700 text-white px-5 py-3 rounded-xl text-sm font-bold transition">
+                Mulai Gratis →
+            </a>
+
+            <button onclick="toggleMenu()"
+                class="md:hidden text-2xl px-2" aria-label="Buka menu">
+                ☰
+            </button>
+
+        </div>
+    </div>
+
+    <div id="mobileMenu" class="hidden md:hidden px-6 pb-5 space-y-4">
+        <a onclick="toggleMenu()" href="#home" class="block">Beranda</a>
+        <a onclick="toggleMenu()" href="#about" class="block">Tentang</a>
+        <a onclick="toggleMenu()" href="#features" class="block">Fitur</a>
+        <a onclick="toggleMenu()" href="#pricing" class="block">Harga</a>
+    </div>
+
+</nav>
+
+
+<!-- HERO SECTION -->
+
+<section id="home" class="relative overflow-hidden hero-grid">
+
+    <div class="absolute w-96 h-96 bg-blue-600/20 blur-[120px] rounded-full top-10 left-1/4"></div>
+    <div class="absolute w-96 h-96 bg-purple-600/20 blur-[120px] rounded-full bottom-0 right-0"></div>
+
+    <div class="relative max-w-7xl mx-auto px-6 py-28 text-center">
+
+        <div class="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-500 text-sm font-semibold mb-8">
+            ✨ THE NEXT GENERATION OF AI
+        </div>
+
+        <h1 class="text-5xl md:text-7xl font-black leading-tight tracking-tight">
+            Masa Depan Ada
+            <br>
+            Di Tangan
+            <span class="gradient-text">Kecerdasan AI</span>
+        </h1>
+
+        <p class="max-w-2xl mx-auto mt-7 text-gray-500 dark:text-gray-400 text-lg leading-relaxed">
+            Temukan cara baru untuk bekerja, berkreasi, dan berkembang.
+            Aivora AI menghadirkan teknologi cerdas untuk membantu
+            mewujudkan potensi terbaikmu.
+        </p>
+
+        <div class="flex flex-col sm:flex-row justify-center gap-4 mt-10">
+
+            <a href="#pricing"
+                class="bg-blue-600 hover:bg-blue-700 text-white px-9 py-4 rounded-xl font-bold shadow-lg shadow-blue-600/20 transition">
+                Mulai Perjalanan →
+            </a>
+
+            <a href="#about"
+                class="border border-gray-300 dark:border-gray-700 hover:bg-gray-200 dark:hover:bg-gray-800 px-9 py-4 rounded-xl font-bold transition">
+                Pelajari Lebih Lanjut
+            </a>
+
+        </div>
+
+        <!-- AI VISUAL -->
+
+        <div class="max-w-3xl mx-auto mt-20 p-6 md:p-10 rounded-3xl border border-gray-200 dark:border-gray-700 bg-white/70 dark:bg-gray-900/70 backdrop-blur-xl glow">
+
+            <div class="flex items-center gap-2 mb-8">
+                <span class="w-3 h-3 bg-red-500 rounded-full"></span>
+                <span class="w-3 h-3 bg-yellow-500 rounded-full"></span>
+                <span class="w-3 h-3 bg-green-500 rounded-full"></span>
+                <span class="text-xs text-gray-400 ml-3">Aivora Intelligence System</span>
+            </div>
+
+            <div class="text-6xl mb-5">🧠</div>
+
+            <h3 class="text-2xl font-bold gradient-text">
+                Think Smarter. Work Faster.
+            </h3>
+
+            <p class="text-gray-500 dark:text-gray-400 mt-3">
+                Intelligent technology for limitless possibilities.
+            </p>
+
+            <div class="grid grid-cols-3 gap-3 mt-10">
+
+                <div class="bg-blue-500/10 rounded-xl p-4">
+                    <div class="text-2xl">⚡</div>
+                    <p class="text-xs mt-2">Fast</p>
+                </div>
+
+                <div class="bg-purple-500/10 rounded-xl p-4">
+                    <div class="text-2xl">🔒</div>
+                    <p class="text-xs mt-2">Secure</p>
+                </div>
+
+                <div class="bg-cyan-500/10 rounded-xl p-4">
+                    <div class="text-2xl">🌐</div>
+                    <p class="text-xs mt-2">Connected</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT SECTION -->
+
+<section id="about" class="py-24">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="text-center max-w-2xl mx-auto mb-16">
+
+            <span class="text-blue-500 font-bold text-sm tracking-widest">
+                ABOUT AIVORA
+            </span>
+
+            <h2 class="text-4xl font-black mt-4">
+                Teknologi Cerdas,
+                <span class="gradient-text">Solusi Tanpa Batas.</span>
+            </h2>
+
+            <p class="text-gray-500 dark:text-gray-400 mt-5">
+                Kami menghadirkan pengalaman digital yang lebih pintar
+                melalui inovasi teknologi kecerdasan buatan.
+            </p>
+
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-7">
+
+            <div class="p-8 rounded-3xl bg-blue-600 text-white hover:-translate-y-2 transition">
+                <div class="text-5xl mb-6">🤖</div>
+                <h3 class="text-2xl font-bold">Artificial Intelligence</h3>
+                <p class="text-blue-100 mt-4">
+                    Teknologi AI yang membantu menyelesaikan berbagai
+                    kebutuhan secara cerdas dan efisien.
+                </p>
+            </div>
+
+            <div class="p-8 rounded-3xl bg-gradient-to-br from-purple-600 to-pink-600 text-white hover:-translate-y-2 transition">
+                <div class="text-5xl mb-6">💎</div>
+                <h3 class="text-2xl font-bold">Smart Innovation</h3>
+                <p class="text-purple-100 mt-4">
+                    Menghadirkan inovasi digital untuk mendukung
+                    kreativitas dan perkembangan teknologi.
+                </p>
+            </div>
+
+            <div class="p-8 rounded-3xl bg-gradient-to-br from-cyan-600 to-blue-700 text-white hover:-translate-y-2 transition">
+                <div class="text-5xl mb-6">🚀</div>
+                <h3 class="text-2xl font-bold">Future Solutions</h3>
+                <p class="text-cyan-100 mt-4">
+                    Menciptakan solusi modern untuk menghadapi
+                    tantangan dunia digital masa depan.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FEATURES -->
+
+<section id="features" class="py-24 bg-gray-100 dark:bg-[#0d1425]">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="text-center mb-16">
+
+            <span class="text-blue-500 text-sm font-bold tracking-widest">
+                OUR FEATURES
+            </span>
+
+            <h2 class="text-4xl font-black mt-4">
+                Fitur Unggulan <span class="gradient-text">Aivora</span>
+            </h2>
+
+            <p class="text-gray-500 dark:text-gray-400 mt-4">
+                Semua kebutuhan digital dalam satu teknologi pintar.
+            </p>
+
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
+
+            <div class="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-8 rounded-3xl hover:border-blue-500 transition">
+                <div class="text-4xl mb-6">⚡</div>
+                <h3 class="text-xl font-bold">Lightning Speed</h3>
+                <p class="text-gray-500 dark:text-gray-400 mt-3 text-sm leading-relaxed">
+                    Proses pekerjaan lebih cepat dengan teknologi AI yang efisien.
+                </p>
+            </div>
+
+            <div class="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-8 rounded-3xl hover:border-blue-500 transition">
+                <div class="text-4xl mb-6">🛡️</div>
+                <h3 class="text-xl font-bold">Data Protection</h3>
+                <p class="text-gray-500 dark:text-gray-400 mt-3 text-sm leading-relaxed">
+                    Sistem keamanan dirancang untuk membantu melindungi informasi pengguna.
+                </p>
+            </div>
+
+            <div class="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-8 rounded-3xl hover:border-blue-500 transition">
+                <div class="text-4xl mb-6">🌍</div>
+                <h3 class="text-xl font-bold">Global Connection</h3>
+                <p class="text-gray-500 dark:text-gray-400 mt-3 text-sm leading-relaxed">
+                    Mendukung integrasi dengan berbagai platform digital.
+                </p>
+            </div>
+
+            <div class="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-8 rounded-3xl hover:border-blue-500 transition">
+                <div class="text-4xl mb-6">🧠</div>
+                <h3 class="text-xl font-bold">AI Assistant</h3>
+                <p class="text-gray-500 dark:text-gray-400 mt-3 text-sm leading-relaxed">
+                    Asisten pintar untuk membantu menjawab pertanyaan dan mencari ide.
+                </p>
+            </div>
+
+            <div class="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-8 rounded-3xl hover:border-blue-500 transition">
+                <div class="text-4xl mb-6">📊</div>
+                <h3 class="text-xl font-bold">Smart Analytics</h3>
+                <p class="text-gray-500 dark:text-gray-400 mt-3 text-sm leading-relaxed">
+                    Membantu menganalisis informasi dan memahami data.
+                </p>
+            </div>
+
+            <div class="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-800 p-8 rounded-3xl hover:border-blue-500 transition">
+                <div class="text-4xl mb-6">🎨</div>
+                <h3 class="text-xl font-bold">Creative Studio</h3>
+                <p class="text-gray-500 dark:text-gray-400 mt-3 text-sm leading-relaxed">
+                    Mendukung proses kreatif untuk menghasilkan inspirasi baru.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PRICING -->
+
+<section id="pricing" class="py-24">
+
+    <div class="max-w-6xl mx-auto px-6">
+
+        <div class="text-center mb-16">
+
+            <span class="text-blue-500 text-sm font-bold tracking-widest">
+                OUR PRICING
+            </span>
+
+            <h2 class="text-4xl font-black mt-4">
+                Investasi Untuk <span class="gradient-text">Masa Depanmu</span>
+            </h2>
+
+            <p class="text-gray-500 dark:text-gray-400 mt-4">
+                Pilih paket terbaik sesuai kebutuhanmu.
+            </p>
+
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+
+            <!-- STARTER -->
+
+            <div class="border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 p-9 rounded-3xl">
+
+                <span class="text-blue-500 font-bold text-sm">STARTER PLAN</span>
+
+                <h3 class="text-3xl font-black mt-4">Starter</h3>
+
+                <p class="text-gray-500 mt-3">
+                    Untuk penggunaan sehari-hari.
+                </p>
+
+                <div class="my-8">
+                    <span class="text-4xl font-black">Rp 59.000</span>
+                    <span class="text-gray-500">/bulan</span>
+                </div>
+
+                <ul class="space-y-5 text-sm mb-10">
+                    <li>✓ Akses fitur AI dasar</li>
+                    <li>✓ 3.000 AI Request</li>
+                    <li>✓ Bantuan pengguna</li>
+                    <li>✓ Pembaruan sistem</li>
+                </ul>
+
+                <button onclick="pilihPaket('Starter')"
+                    class="w-full py-4 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold transition">
+                    Pilih Starter
+                </button>
+
+            </div>
+
+
+            <!-- PRO -->
+
+            <div class="relative p-9 rounded-3xl bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-700 text-white shadow-2xl shadow-blue-600/20">
+
+                <span class="absolute top-6 right-6 bg-yellow-400 text-black px-4 py-1 rounded-full text-xs font-black">
+                    BEST VALUE
+                </span>
+
+                <span class="text-blue-100 font-bold text-sm">PROFESSIONAL PLAN</span>
+
+                <h3 class="text-3xl font-black mt-4">Professional</h3>
+
+                <p class="text-blue-100 mt-3">
+                    Untuk produktivitas tanpa batas.
+                </p>
+
+                <div class="my-8">
+                    <span class="text-4xl font-black">Rp 149.000</span>
+                    <span class="text-blue-100">/bulan</span>
+                </div>
+
+                <ul class="space-y-5 text-sm mb-10">
+                    <li>✓ Akses fitur AI lengkap</li>
+                    <li>✓ 15.000 AI Request</li>
+                    <li>✓ Integrasi berbagai platform</li>
+                    <li>✓ Prioritas bantuan pengguna</li>
+                </ul>
+
+                <button onclick="pilihPaket('Professional')"
+                    class="w-full py-4 rounded-xl bg-white text-blue-700 hover:bg-blue-100 font-bold transition">
+                    Pilih Professional
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CALL TO ACTION -->
+
+<section class="px-6 pb-24">
+
+    <div class="max-w-6xl mx-auto text-center rounded-3xl p-12 md:p-20 bg-gradient-to-r from-blue-600 to-purple-700 text-white">
+
+        <h2 class="text-3xl md:text-5xl font-black">
+            Siap Menjelajahi Masa Depan?
+        </h2>
+
+        <p class="text-blue-100 mt-5 max-w-xl mx-auto">
+            Mulai perjalanan digitalmu bersama Aivora AI
+            dan temukan potensi tanpa batas.
+        </p>
+
+        <a href="#pricing"
+            class="inline-block mt-9 px-9 py-4 bg-white text-blue-700 rounded-xl font-bold hover:bg-blue-100 transition">
+            Bergabung Sekarang →
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer class="bg-gray-100 dark:bg-[#0d1425] border-t border-gray-200 dark:border-gray-800">
+
+    <div class="max-w-7xl mx-auto px-6 py-12">
+
+        <div class="flex flex-col md:flex-row justify-between items-center gap-8">
+
+            <div class="text-center md:text-left">
+                <h2 class="text-2xl font-black">
+                    <span class="gradient-text">AIVORA</span> AI.
+                </h2>
+
+                <p class="text-sm text-gray-500 mt-3">
+                    Empowering Tomorrow With Intelligence.
+                </p>
+            </div>
+
+            <div class="flex gap-7 text-sm text-gray-500 dark:text-gray-400">
+                <a href="#home" class="hover:text-blue-500">Beranda</a>
+                <a href="#about" class="hover:text-blue-500">Tentang</a>
+                <a href="#features" class="hover:text-blue-500">Fitur</a>
+                <a href="#pricing" class="hover:text-blue-500">Harga</a>
+            </div>
+
+        </div>
+
+        <div class="border-t border-gray-200 dark:border-gray-800 mt-10 pt-7 text-center text-sm text-gray-500">
+            © 2026 Aivora AI. All Rights Reserved.
+        </div>
+
+    </div>
+
+</footer>
+
+
+<!-- JAVASCRIPT -->
+
+<script>
+
+    function toggleDark() {
+
+        document.documentElement.classList.toggle('dark');
+
+        const dark = document.documentElement.classList.contains('dark');
+
+        document.getElementById('themeIcon').textContent =
+            dark ? '☀️' : '🌙';
+
+    }
+
+    function toggleMenu() {
+
+        document.getElementById('mobileMenu')
+            .classList.toggle('hidden');
+
+    }
+
+    function pilihPaket(nama) {
+
+        alert(
+            'Terima kasih telah memilih paket ' +
+            nama +
+            ' Aivora AI! 🚀'
+        );
+
+    }
+
+</script>
+
+</body>
+</html>
